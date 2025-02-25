@@ -1,0 +1,4 @@
+export SECRET_KEY=xxxxxxxxx
+export DEBUG_VALUE=xx
+export ALLOWED_HOSTS=xxxx
+export CSRF_TRUSTED_ORIGINS=xxxx
