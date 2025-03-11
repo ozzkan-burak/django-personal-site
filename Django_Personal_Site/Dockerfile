@@ -18,5 +18,3 @@ RUN /opt/venv/bin/pip install python-dotenv
 COPY . /srv/app
 WORKDIR /srv/app
 
-# Set the virtual environment as the default Python environment
-ENV PATH="/opt/venv/bin:$PATH"

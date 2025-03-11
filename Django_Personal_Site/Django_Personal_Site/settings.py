@@ -62,7 +62,7 @@ ROOT_URLCONF = "Django_Personal_Site.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],  # Proje kök dizininde 'templates' dizinini belirtin
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
