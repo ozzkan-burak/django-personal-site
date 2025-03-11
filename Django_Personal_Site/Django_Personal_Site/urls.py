@@ -5,3 +5,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("core.urls")),  # 'core' uygulamanızın adını kullanın
 ]
+
+# def index(request):
+#     return HttpResponse("Hoş Geldiniz!") 
