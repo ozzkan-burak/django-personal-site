@@ -1,9 +1,12 @@
 from django.contrib import admin
 from django.urls import path, include
+from core.views import index
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("core.urls")),  # 'core' uygulamanızın adını kullanın
+    # iki farklı şekilde de tanımlanabilir
+    ##path("", include("core.urls"), name="index" ),  # 'core' uygulamanızın adını kullanın(
+    path("", index, name="index"),
 ]
 
 # def index(request):
